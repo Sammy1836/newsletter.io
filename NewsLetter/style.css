@@ -7,16 +7,24 @@
 body{
     text-align: center;
     margin-top: 3vh;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 #heading{
     font-size: 4em;
-    color: orange !important;
+    color: white !important;
 }
 
+.titleH{
+    background-color: rgb(68, 68, 68);
+    margin: 0;
+    
+}
+
+
+
 h1{
-    color: black;
+    color: white;
     /* font-family: Prompt; */
     font-size: 3em;
 }
@@ -27,20 +35,24 @@ h2{
 }
 
 .container{
-    /* display:flex; */
+    display:flex;
+    flex-wrap: wrap;
     margin: 5vh 5vw;
+    /* width:100vw; */
+
     
 }
 
 .cards{
-    display: flex;
+    /* display: flex; */
+    width: 35vw;
     flex-direction: row;
     padding: 5px;
     border: 2px solid black;
-    border-radius: 20px 0 25px 0;
+    border-radius: 20px;
     margin: 5vh;
-    background-color: rgb(44, 44, 44);
-    box-shadow: 3px 3px 10px red;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px green;
 }
 
 .cards:hover{
@@ -49,7 +61,7 @@ h2{
 }
 
 .image{
-    width:48vw;
+    /* width:30vw; */
     /* float:left; */
     display: flex;
     align-items: center;
@@ -58,22 +70,24 @@ h2{
 }
 
 img{
-    width:100%;
+    width:90%;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
+    border-radius: 10px;
+
 }
 img:hover{
     border:2px solid yellowgreen;
 }
 
 .content{
-    width:48vw;
+    /* width:30vw; */
     /* background-color:rgb(26, 207, 138); */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3vh 5vw;
+    padding: 2vh 3vw;
     color: white;
 }
 
@@ -81,10 +95,18 @@ img:hover{
 .texts{
     text-align: center;
     transition: 0.2s ease;
-    /* padding: 10px; */  
+    /* padding: 10px; */
+    /* margin:5px; */
 }
+
+.itmes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .texts:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 h3{
